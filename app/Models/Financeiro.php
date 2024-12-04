@@ -15,6 +15,7 @@ class Financeiro extends Model
         'tipo_de_insercao',
         'titulo',
         'valor',
-        'descricao'
+        'descricao',
+        'data'
     ];
 }
