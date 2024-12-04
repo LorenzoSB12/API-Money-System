@@ -21,6 +21,7 @@ class FinanceiroController extends Controller
             'titulo' => 'required|string',
             'valor' => 'required|string',
             'descricao' => 'nullable|string',
+            'data' => 'nullable|string',
         ]);
 
         $financeiro = Financeiro::create($validated);
@@ -54,6 +55,8 @@ class FinanceiroController extends Controller
             'titulo' => 'required|string',
             'valor' => 'required|string',
             'descricao' => 'nullable|string',
+            'data' => 'nullable|string',
+            
         ]);
 
         $financeiro->update($validated);
@@ -75,5 +78,3 @@ class FinanceiroController extends Controller
         return response()->json(['message' => 'Registro excluído com sucesso'], 200);
     }
 }
-
-
